@@ -1,0 +1,19 @@
+{
+  "window.zoomLevel": 3,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.pyc": true,
+    "appFotovoltaica/__init__.pyc": true,
+    "appFotovoltaica/settings.pyc": true,
+    "appFotovoltaica/urls.pyc": true,
+    "appFotovoltaica/wsgi.pyc": true,
+    "energia/__init__.pyc": true,
+    "energia/urls.pyc": true,
+    "energia/views.pyc": true
+  },
+  "python.linting.enabled": false
+}

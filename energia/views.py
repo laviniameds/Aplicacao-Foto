@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 
 def inserirDados(request):
-    return HttpResponse("pagina de inserir dados")
+    return render(request, "paginas/inserir_dados.html")
