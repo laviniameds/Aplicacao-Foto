@@ -13,7 +13,9 @@
     "appFotovoltaica/wsgi.pyc": true,
     "energia/__init__.pyc": true,
     "energia/urls.pyc": true,
-    "energia/views.pyc": true
+    "energia/views.pyc": true,
+    "energia/admin.pyc": true,
+    "energia/models.pyc": true
   },
   "python.linting.enabled": false
 }
