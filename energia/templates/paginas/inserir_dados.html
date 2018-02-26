@@ -3,29 +3,78 @@
 {% block content %}
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-12 ">
             <div class="panel panel-default">
                 <div class="panel-heading">Informações Fatura CONSERN</div>
 
                 <div class="panel-body">
-                    <form action="/editarUsr" method="POST">    
-              				<input type="hidden" value="" name="id">
+                    <form action="" method="POST">    
+              			<input type="hidden" value="" name="id">
 
-                    <div class="form-group">
-                        <label for="nome" class="col-md-4 control-label">Nome</label>
+                        <div class="form-group">
+                            <label for="nome" class="col-md-6 control-label">Consumo de Energia Ativa na Ponta (Quantidade)</label>
 
-                        <div class="col-md-6">
-                            <input id="nome" type="text" class="form-control" name="nome" value="" required autofocus>
+                            <div class="col-md-4">
+                                <input id="nome" type="text" class="form-control" name="nome" value="" required autofocus>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="email" class="col-md-4 control-label">E-Mail</label>
+                        <div class="form-group">
+                                <label for="nome" class="col-md-6 control-label">Consumo de Energia Ativa na Ponta (Valor)</label>
+    
+                                <div class="col-md-4">
+                                    <input id="nome" type="text" class="form-control" name="nome" value="" required autofocus>
+                                </div>
+                            </div>
 
-                        <div class="col-md-6">
-                            <input id="email" type="email" class="form-control" name="email" value="" required>
+                        <div class="form-group">
+                                <label for="nome" class="col-md-6 control-label">Consumo de Energia Ativa Fora Ponta (Quantidade)</label>
+    
+                                <div class="col-md-4">
+                                    <input id="nome" type="text" class="form-control" name="nome" value="" required autofocus>
+                                </div>
                         </div>
-                    </div>
+
+                        <div class="form-group">
+                                <label for="nome" class="col-md-6 control-label">Consumo de Energia Ativa Fora Ponta (Valor)</label>
+    
+                                <div class="col-md-4">
+                                    <input id="nome" type="text" class="form-control" name="nome" value="" required autofocus>
+                                </div>
+                        </div>
+
+                        <div class="form-group">
+                                <label for="nome" class="col-md-6 control-label">Tarifa (Despesa de Energia)</label>
+    
+                                <div class="col-md-4">
+                                    <input id="nome" type="text" class="form-control" name="nome" value="" required autofocus>
+                                </div>
+                        </div>
+
+                        <div class="form-group">
+                                <label for="nome" class="col-md-6 control-label">Importe a Somar ou Diminuir (C/Imposto)</label>
+    
+                                <div class="col-md-4">
+                                    <input id="nome" type="text" class="form-control" name="nome" value="" required autofocus>
+                                </div>
+                        </div>
+
+                        <div class="form-group">
+                                <label for="nome" class="col-md-6 control-label">Valor da Fatura</label>
+    
+                                <div class="col-md-4">
+                                    <input id="nome" type="text" class="form-control" name="nome" value="" required autofocus>
+                                </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-10 col-md-offset-0">
+                                <br>
+                                <a href="" type="submit" class="btn btn-primary pull-right">Enviar</a>
+                                </div>
+                            </div>
+                        </div>
+                  </form>
                 </div>
             </div>
         </div>
