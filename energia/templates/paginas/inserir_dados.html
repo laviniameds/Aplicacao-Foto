@@ -1,0 +1,34 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Informações Fatura CONSERN</div>
+
+                <div class="panel-body">
+                    <form action="/editarUsr" method="POST">    
+              				<input type="hidden" value="" name="id">
+
+                    <div class="form-group">
+                        <label for="nome" class="col-md-4 control-label">Nome</label>
+
+                        <div class="col-md-6">
+                            <input id="nome" type="text" class="form-control" name="nome" value="" required autofocus>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="col-md-4 control-label">E-Mail</label>
+
+                        <div class="col-md-6">
+                            <input id="email" type="email" class="form-control" name="email" value="" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
