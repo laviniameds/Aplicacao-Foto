@@ -1,5 +1,5 @@
 {
-  "window.zoomLevel": 3,
+  "window.zoomLevel": 1,
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -15,7 +15,8 @@
     "energia/urls.pyc": true,
     "energia/views.pyc": true,
     "energia/admin.pyc": true,
-    "energia/models.pyc": true
+    "energia/models.pyc": true,
+    "energia/migrations/__init__.pyc": true
   },
   "python.linting.enabled": false
 }

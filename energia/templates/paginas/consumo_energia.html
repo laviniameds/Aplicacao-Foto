@@ -1,12 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+{% extends "base/base.html" %}
+
+{% block content %}
+<div class="container">
+    <h2>Tabela de Consumo de Energia (Kwh)</h2>           
+    <table class="table table-responsive">
+      <thead>
+        <tr>
+          <th>FONTE</th>
+          <th>JAN</th>
+          <th>FEV</th>
+          <th>MAR</th>
+          <th>ABR</th>
+          <th>MAI</th>
+          <th>JUN</th>
+          <th>JUL</th>
+          <th>AGO</th>
+          <th>SET</th>
+          <th>OUT</th>
+          <th>NOV</th>
+          <th>DEZ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>COSERN</th>
+          <td>{{consumo_ponta_qtd}}</td>
+        </tr>
+        <tr>
+          <th>INJETADO - FV</th>
+          <td>teste</td>
+          <td>teste</td>
+        </tr>
+        <tr>
+          <th>CONSUMIDO - FV</th>
+          <td>teste</td>
+          <td>teste</td>
+        </tr>
+        <tr>
+          <th>TOTAL</th>
+          <td>teste</td>
+          <td>teste</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+{% endblock content %}

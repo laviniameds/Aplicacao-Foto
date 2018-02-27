@@ -8,69 +8,69 @@
                 <div class="panel-heading">Informações Fatura CONSERN</div>
 
                 <div class="panel-body">
-                    <form action="" method="POST">    
-              			<input type="hidden" value="" name="id">
+                    <form action="{% url 'consumo_energia' %}" method="POST">
+                        {% csrf_token %}    
 
                         <div class="form-group">
-                            <label for="nome" class="col-md-6 control-label">Consumo de Energia Ativa na Ponta (Quantidade)</label>
+                            <label for="consumo_ponta_qtd" class="col-md-6 control-label">Consumo de Energia Ativa na Ponta (Quantidade)</label>
 
                             <div class="col-md-4">
-                                <input id="nome" type="text" class="form-control" name="nome" value="" required autofocus>
+                                <input id="consumo_ponta_qtd" type="text" class="form-control" name="consumo_ponta_qtd" value="" required autofocus>
                             </div>
                         </div>
 
                         <div class="form-group">
-                                <label for="nome" class="col-md-6 control-label">Consumo de Energia Ativa na Ponta (Valor)</label>
+                                <label for="consumo_ponta_valor" class="col-md-6 control-label">Consumo de Energia Ativa na Ponta (Valor)</label>
     
                                 <div class="col-md-4">
-                                    <input id="nome" type="text" class="form-control" name="nome" value="" required autofocus>
+                                    <input id="consumo_ponta_valor" type="text" class="form-control" name="consumo_ponta_valor" value="" required autofocus>
                                 </div>
                             </div>
 
                         <div class="form-group">
-                                <label for="nome" class="col-md-6 control-label">Consumo de Energia Ativa Fora Ponta (Quantidade)</label>
+                                <label for="consumo_fora_qtd" class="col-md-6 control-label">Consumo de Energia Ativa Fora Ponta (Quantidade)</label>
     
                                 <div class="col-md-4">
-                                    <input id="nome" type="text" class="form-control" name="nome" value="" required autofocus>
+                                    <input id="consumo_fora_qtd" type="text" class="form-control" name="consumo_fora_qtd" value="" required autofocus>
                                 </div>
                         </div>
 
                         <div class="form-group">
-                                <label for="nome" class="col-md-6 control-label">Consumo de Energia Ativa Fora Ponta (Valor)</label>
+                                <label for="consumo_fora_valor" class="col-md-6 control-label">Consumo de Energia Ativa Fora Ponta (Valor)</label>
     
                                 <div class="col-md-4">
-                                    <input id="nome" type="text" class="form-control" name="nome" value="" required autofocus>
+                                    <input id="consumo_fora_valor" type="text" class="form-control" name="consumo_fora_valor" value="" required autofocus>
                                 </div>
                         </div>
 
                         <div class="form-group">
-                                <label for="nome" class="col-md-6 control-label">Tarifa (Despesa de Energia)</label>
+                                <label for="tarifa" class="col-md-6 control-label">Tarifa (Despesa de Energia)</label>
     
                                 <div class="col-md-4">
-                                    <input id="nome" type="text" class="form-control" name="nome" value="" required autofocus>
+                                    <input id="tarifa" type="text" class="form-control" name="tarifa" value="" required autofocus>
                                 </div>
                         </div>
 
                         <div class="form-group">
-                                <label for="nome" class="col-md-6 control-label">Importe a Somar ou Diminuir (C/Imposto)</label>
+                                <label for="importe" class="col-md-6 control-label">Importe a Somar ou Diminuir (C/Imposto)</label>
     
                                 <div class="col-md-4">
-                                    <input id="nome" type="text" class="form-control" name="nome" value="" required autofocus>
+                                    <input id="importe" type="text" class="form-control" name="importe" value="" required autofocus>
                                 </div>
                         </div>
 
                         <div class="form-group">
-                                <label for="nome" class="col-md-6 control-label">Valor da Fatura</label>
+                                <label for="valor_fatura" class="col-md-6 control-label">Valor da Fatura</label>
     
                                 <div class="col-md-4">
-                                    <input id="nome" type="text" class="form-control" name="nome" value="" required autofocus>
+                                    <input id="valor_fatura" type="text" class="form-control" name="valor_fatura" value="" required autofocus>
                                 </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-md-10 col-md-offset-0">
                                 <br>
-                                <a href="" type="submit" class="btn btn-primary pull-right">Enviar</a>
+                                <input type="submit" class="btn btn-primary pull-right" value="Enviar">
                                 </div>
                             </div>
                         </div>
