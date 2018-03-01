@@ -5,6 +5,7 @@ def inserirDados(request):
 
 def consumoEnergia(request):
     data = {}
+    valores = {}
     if request.method == 'POST':
         data['consumo_ponta_qtd'] = request.POST.get('consumo_ponta_qtd', 'consumo_ponta_qtd not found')
         data['consumo_ponta_valor'] = request.POST.get('consumo_ponta_valor', 'consumo_ponta_valor not found')
@@ -14,7 +15,12 @@ def consumoEnergia(request):
         data['importe'] = request.POST.get('importe', 'importe not found')
         data['valor_fatura'] = request.POST.get('valor_fatura', 'valor_fatura not found')
     
-    return render(request, "paginas/consumo_energia.html", data)
+    valores['cosern'] = int(data['consumo_ponta_qtd']) + int(data['consumo_fora_qtd'])
+    valores['consumido_fv'] = 0
+    valores['injetado_fv'] = 0
+    valores['total_EA'] = valores['cosern'] + valores['consumido_fv'] + valores['injetado_fv']
+
+    return render(request, "paginas/consumo_energia.html", valores)
 
 def despesaEnergia(request):
     return render(request, "paginas/despesa_energia.html")

@@ -3,57 +3,8 @@
 {% block content %}
 
 <div class="container">
-    <h2>Tabela de Consumo de Energia (Kwh)</h2>           
-    <table class="table table-responsive">
-      <thead>
-        <tr>
-          <th>FONTE</th>
-          <th>JAN</th>
-          <th>FEV</th>
-          <th>MAR</th>
-          <th>ABR</th>
-          <th>MAI</th>
-          <th>JUN</th>
-          <th>JUL</th>
-          <th>AGO</th>
-          <th>SET</th>
-          <th>OUT</th>
-          <th>NOV</th>
-          <th>DEZ</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>TARIFA</th>
-          <td>teste</td>
-        </tr>
-        <tr>
-          <th>COM FV</th>
-          <td>teste</td>
-          <td>teste</td>
-        </tr>
-        <tr>
-          <th>SEM FV</th>
-          <td>teste</td>
-          <td>teste</td>
-        </tr>
-        <tr>
-          <th>VALOR BRUTO</th>
-          <td>teste</td>
-          <td>teste</td>
-        </tr>
-        <tr>
-          <th>ECONOMIA</th>
-          <td>teste</td>
-          <td>teste</td>
-        </tr>
-      </tbody>
-    </table>
-</div>
-
-<div class="container">
-  <h2>Tabela de Despesa de Energia Ativa (R$)</h2>           
-  <table class="table table-responsive">
+  <h2>Tabela de Consumo de Energia Ativa (Kwh)</h2>           
+  <table class="table table-responsive table-striped">
     <thead>
       <tr>
         <th>FONTE</th>
@@ -74,22 +25,64 @@
     <tbody>
       <tr>
         <th>COSERN</th>
-        <td>{{consumo_ponta_qtd}}</td>
+        <td>{{cosern}}</td>
       </tr>
       <tr>
         <th>INJETADO - FV</th>
-        <td>teste</td>
-        <td>teste</td>
+        <td>{{injetado_fv}}</td>
       </tr>
       <tr>
         <th>CONSUMIDO - FV</th>
-        <td>teste</td>
-        <td>teste</td>
+        <td>{{consumido_fv}}</td>
       </tr>
       <tr>
         <th>TOTAL</th>
-        <td>teste</td>
-        <td>teste</td>
+        <td>{{total_EA}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container">
+  <h2>Tabela de Despesa de Energia Ativa(R$)</h2>           
+  <table class="table table-responsive table-striped">
+    <thead>
+      <tr>
+        <th>FONTE</th>
+        <th>JAN</th>
+        <th>FEV</th>
+        <th>MAR</th>
+        <th>ABR</th>
+        <th>MAI</th>
+        <th>JUN</th>
+        <th>JUL</th>
+        <th>AGO</th>
+        <th>SET</th>
+        <th>OUT</th>
+        <th>NOV</th>
+        <th>DEZ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>TARIFA</th>
+        <td>{{tarifa}}</td>
+      </tr>
+      <tr>
+        <th>COM FV</th>
+        <td>{{com_fv}}</td>
+      </tr>
+      <tr>
+        <th>SEM FV</th>
+        <td>{{sem_fv}}</td>
+      </tr>
+      <tr>
+        <th>VALOR BRUTO</th>
+        <td>{{valor_bruto}}</td>
+      </tr>
+      <tr>
+        <th>ECONOMIA</th>
+        <td>{{economia}}</td>
       </tr>
     </tbody>
   </table>
@@ -97,7 +90,7 @@
 
 <div class="container">
   <h2>Tabela de Usina Fotovoltaica</h2>           
-  <table class="table table-responsive">
+  <table class="table table-responsive table-striped">
     <thead>
       <tr>
         <th>FONTE</th>
