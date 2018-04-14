@@ -15,15 +15,9 @@ def consumoEnergia(request):
         data['importe'] = request.POST.get('importe', 'importe not found')
         data['valor_fatura'] = request.POST.get('valor_fatura', 'valor_fatura not found')
     
-    valores['cosern'] = int(data['consumo_ponta_qtd']) + int(data['consumo_fora_qtd'])
+    """valores['cosern'] = int(data['consumo_ponta_qtd']) + int(data['consumo_fora_qtd'])
     valores['consumido_fv'] = 0
     valores['injetado_fv'] = 0
-    valores['total_EA'] = valores['cosern'] + valores['consumido_fv'] + valores['injetado_fv']
+    valores['total_EA'] = valores['cosern'] + valores['consumido_fv'] + valores['injetado_fv']"""
 
-    return render(request, "paginas/consumo_energia.html", valores)
-
-def despesaEnergia(request):
-    return render(request, "paginas/despesa_energia.html")
-
-def usina_fotovoltaica(request):
-    return render(request, "paginas/usina_fotovoltaica.html")
+    return render(request, "paginas/view_tabelas.html", valores)
