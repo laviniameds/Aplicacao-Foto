@@ -1,5 +1,2 @@
-dataclasses==0.5
-Django==1.10
-psycopg2==2.7.4
-pytz==2018.4
-sqlparse==0.2.4
+Django>=1.10,
+psycopg2
